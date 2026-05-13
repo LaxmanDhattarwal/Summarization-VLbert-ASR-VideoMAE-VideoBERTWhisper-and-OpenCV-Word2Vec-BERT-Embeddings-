@@ -1,6 +1,6 @@
 #flow of project
 
-
+```text
 ┌───────────────────────────┐
 │        Video Input        │
 └─────────────┬─────────────┘
@@ -37,7 +37,7 @@
 ┌───────────────────────────┐
 │       Final Summary       │
 └───────────────────────────┘
-
+```
 
 # Explainable Multimodal Research Paper Assistant
 
