@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+env/
+.env.example
+backend/.env
+
+# Flask runtime
+backend/data/uploads/*
+backend/data/figures/*
+!backend/data/uploads/.gitkeep
+!backend/data/figures/.gitkeep
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
