@@ -1,21 +1,42 @@
 #flow of project
 
 
-Video Input
-    ↓
-movie.py (Video Division into Patches)
-    ↓
-OpenCV → Frame Extraction
-    ↓
-Whisper / ASR → Audio to Text
-    ↓
-VideoMAE / VideoBERT / VLBERT
-    ↓
-Word2Vec / BERT Embeddings
-    ↓
-Summarization Model
-    ↓
-Final Summary
+┌───────────────────────────┐
+│        Video Input        │
+└─────────────┬─────────────┘
+              ↓
+┌───────────────────────────┐
+│ movie.py                  │
+│ (Video Division Patches)  │
+└─────────────┬─────────────┘
+              ↓
+┌───────────────────────────┐
+│ OpenCV                    │
+│ Frame Extraction          │
+└─────────────┬─────────────┘
+              ↓
+┌───────────────────────────┐
+│ Whisper / ASR             │
+│ Audio to Text             │
+└─────────────┬─────────────┘
+              ↓
+┌───────────────────────────┐
+│ VideoMAE / VideoBERT      │
+│ / VLBERT                  │
+└─────────────┬─────────────┘
+              ↓
+┌───────────────────────────┐
+│ Word2Vec /                │
+│ BERT Embeddings           │
+└─────────────┬─────────────┘
+              ↓
+┌───────────────────────────┐
+│ Summarization Model       │
+└─────────────┬─────────────┘
+              ↓
+┌───────────────────────────┐
+│       Final Summary       │
+└───────────────────────────┘
 
 
 # Explainable Multimodal Research Paper Assistant
